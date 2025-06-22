@@ -1,0 +1,19 @@
+{
+    "path": null,
+    "counts": [21,22,23,24,25],
+    "variations": 30,
+    "links": true,
+    "collateral": true,
+    "partial": false,
+    "cb_p_p": true,
+    "data_format": "json",
+    "scale_cb": 100000,
+    "var_cb":  0.01,
+    "p_zero_cb": 0.1,
+    "scale_sp":  1000,
+    "var_sp": 0.01,
+    "p_zero_sp":  0.1,
+    "scale_t": 100,
+    "scale_cmb": 100000,
+    "scale_spl": 10
+}

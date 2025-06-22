@@ -1,0 +1,1 @@
+{"opt_mode": "QUEEN", "opt_options": {"ansatz": "rotations", "ansatz_options": {"start": "random"}, "shots": 100, "verbose": false, "minimizer": "BAYESIAN", "minimizer_options": {"maxiter": 10, "sd": 2, "p": 0.75, "fun": "ei"}, "of_options": {"lam": 0.5, "gamma": 1, "activation_function": "relogist"}}, "instance": "example_4.json"}

@@ -1,0 +1,3 @@
+{
+"solver": "quantum", "transactions": "[1 1 0 1 0]", "collateral": "[6]", "cb_indicators": "[0 1 0 0]", "spl_indicators": "[1]", "evaluation": "0.9998700048029716", "evaluation_call": "1100", "runtime": "19.35388708114624"
+}

@@ -1,0 +1,1 @@
+{"lam": 0.5, "opt_mode": "CPLEX", "opt_options": {"verbose": true, "collateral": true}, "instance": "example_4.json"}

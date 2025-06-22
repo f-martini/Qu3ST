@@ -1,0 +1,1 @@
+from .queen_spired_solver import QueenSpiredSolver
