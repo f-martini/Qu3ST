@@ -31,11 +31,17 @@ jobs:
         id: next_version
         run: |
           tag="${{ steps.get_tag.outputs.tag }}"
+          if [ "$tag" = "v0.0.0" ]; then
+            # No tags exist, use initial commit hash
+            range="$(git rev-list --max-parents=0 HEAD)..HEAD"
+          else
+            range="$tag..HEAD"
+          fi
           version=${tag#v}
           IFS='.' read -r major minor patch <<< "$version"
 
-          # Get commit messages since last tag
-          commits=$(git log "${tag}..HEAD" --pretty=format:%s)
+          # Get commit messages since last tag or from first commit
+          commits=$(git log $range --pretty=format:%s)
 
           bump="patch"  # default
           for msg in $commits; do
